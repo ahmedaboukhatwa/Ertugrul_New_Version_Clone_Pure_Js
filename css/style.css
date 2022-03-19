@@ -1,0 +1,341 @@
+body .color_swicher {
+  z-index: 9999;
+  position: fixed;
+  right: 0;
+  top: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: self-end;
+  height: 101px;
+  width: 122px; }
+  body .color_swicher .blue_theme {
+    transition: all .5s ease-in-out;
+    height: 50px;
+    width: 70px;
+    background-color: #012a3e;
+    cursor: pointer; }
+  body .color_swicher .red_theme {
+    transition: all .5s ease-in-out;
+    height: 50px;
+    width: 70px;
+    background-color: #551d26;
+    cursor: pointer; }
+  body .color_swicher .active_theme {
+    width: 120px;
+    border: 1px solid  #c8bb82; }
+body .intro {
+  background: url(../images/intro/wallpaper.jpg) center center fixed;
+  height: 665px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  transition: all 1s ease-in-out; }
+  body .intro .content {
+    padding: 150px 140px;
+    color: white;
+    width: 60%;
+    font-size: 27px; }
+    body .intro .content h1 {
+      font-weight: bold; }
+    body .intro .content p {
+      color: #c8bb82; }
+  body .intro .btn_down {
+    height: 100px;
+    width: 60px;
+    cursor: pointer;
+    border-radius: 30px;
+    border: 1px solid #ebebff;
+    outline: none;
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-10px);
+    background-color: transparent;
+    z-index: 9;
+    transition: all 0.5s ease-in-out; }
+    body .intro .btn_down:hover {
+      height: 110px; }
+    body .intro .btn_down i {
+      color: #ebebff;
+      font-size: 28px; }
+  body .intro canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 100%;
+    width: 100%; }
+body nav {
+  background-color: #012a3e;
+  position: sticky;
+  top: 0;
+  transition: all 0.5s ease-in-out;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 140px;
+  z-index: 999; }
+  body nav img {
+    width: 170px; }
+  body nav ul {
+    width: 480px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 19px;
+    margin: 0;
+    transform: translateX(142px); }
+    body nav ul li {
+      cursor: pointer;
+      list-style: none;
+      font-weight: bold; }
+  body nav select {
+    background-color: transparent;
+    color: white;
+    height: 32px;
+    width: 65px; }
+    body nav select option {
+      color: #012a3e; }
+body .about {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  transition: all 1s ease-in-out;
+  height: 500px;
+  background-color: #ebebff;
+  padding: 50px 140px; }
+  body .about .about_wallpaper {
+    align-content: space-between;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    left: 0;
+    top: 0;
+    height: 100%; }
+    body .about .about_wallpaper .up_img {
+      width: 100%;
+      height: 90px; }
+    body .about .about_wallpaper .down_img {
+      width: 100%;
+      height: 90px;
+      transform: rotate(180deg); }
+  body .about .about_img {
+    width: 600px;
+    height: 400px; }
+    body .about .about_img img {
+      width: 100%;
+      height: 100%; }
+  body .about .about_info {
+    text-align: center;
+    width: 570px;
+    font-size: 22.5px; }
+body .seasons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transition: all 1s ease-in-out;
+  position: relative;
+  height: 500px;
+  background-color: #012a3e;
+  padding: 20px 140px;
+  overflow: hidden; }
+  body .seasons .seasons_wallpaper {
+    position: absolute;
+    height: 900px;
+    width: 900px;
+    left: -190px;
+    top: -245px;
+    transform: rotate(45deg); }
+  body .seasons .season {
+    width: 240px;
+    position: relative;
+    overflow: hidden;
+    transition: all 1s ease-in-out; }
+    body .seasons .season img {
+      position: absolute;
+      width: 100%;
+      height: 100%; }
+    body .seasons .season .season_info {
+      background-color: rgba(0, 0, 0, 0.5);
+      transition: all 1s ease-in-out;
+      text-align: center;
+      color: white;
+      position: absolute;
+      height: 100%;
+      padding: 15px 5px;
+      top: 400px; }
+      body .seasons .season .season_info h2 {
+        font-weight: bold; }
+      body .seasons .season .season_info p {
+        height: 50px;
+        z-index: 555; }
+    body .seasons .season:hover .season_info {
+      top: 0; }
+body .quote {
+  transition: all 1s ease-in-out;
+  padding: 150px 140px;
+  text-align: center; }
+  body .quote .quote_content {
+    display: flex;
+    align-items: center; }
+    body .quote .quote_content i {
+      color: #ebebff;
+      font-size: 150px; }
+    body .quote .quote_content p {
+      font-size: 25px; }
+  body .quote span {
+    font-size: 25px;
+    font-weight: bold; }
+body .warriors {
+  transition: all 1s ease-in-out;
+  background-color: #012a3e;
+  padding: 40px 140px; }
+  body .warriors .warrior_active {
+    color: #ebebff;
+    display: flex;
+    margin: 15px 0; }
+    body .warriors .warrior_active .warrior_img {
+      width: 885px;
+      height: 315px;
+      overflow: hidden;
+      border-radius: 25px; }
+      body .warriors .warrior_active .warrior_img img {
+        height: 100%;
+        width: 100%; }
+    body .warriors .warrior_active .warrior_info {
+      padding-left: 60px; }
+      body .warriors .warrior_active .warrior_info span {
+        font-weight: bold;
+        font-size: 30px; }
+  body .warriors .warriors_control {
+    display: flex; }
+    body .warriors .warriors_control .visible_warriors {
+      width: 1500px;
+      height: 250px;
+      overflow: hidden; }
+      body .warriors .warriors_control .visible_warriors .ul_warriors_list {
+        list-style: none;
+        width: 1661px;
+        margin-left: -237px;
+        padding: 0;
+        display: flex;
+        justify-content: space-between; }
+        body .warriors .warriors_control .visible_warriors .ul_warriors_list .warrior {
+          height: 250px;
+          width: 300px;
+          overflow: hidden;
+          padding: 0 5px; }
+          body .warriors .warriors_control .visible_warriors .ul_warriors_list .warrior img {
+            height: 100%;
+            width: 100%; }
+    body .warriors .warriors_control button {
+      outline: none;
+      background-color: transparent;
+      border: 1px solid #c8bb82; }
+      body .warriors .warriors_control button i {
+        color: #c8bb82; }
+body .subscribe {
+  color: #012a3e;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 100px 140px; }
+  body .subscribe .subscribe_text {
+    gap: 3px; }
+    body .subscribe .subscribe_text span {
+      color: #c8bb82;
+      font-size: 37px; }
+    body .subscribe .subscribe_text p {
+      font-size: 30px; }
+  body .subscribe .subscribe_input {
+    display: flex;
+    height: 70px;
+    width: 700px; }
+    body .subscribe .subscribe_input input {
+      width: 90%;
+      height: 100%;
+      border: 1px solid #012a3e;
+      outline: none; }
+    body .subscribe .subscribe_input button {
+      color: #ebebff;
+      background-color: #012a3e;
+      border: none;
+      outline: none;
+      width: 10%; }
+body footer {
+  background-color: #202020;
+  padding: 20px 140px 45px 140px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative; }
+  body footer .logo {
+    width: 40%;
+    display: flex;
+    justify-content: space-between; }
+    body footer .logo img {
+      height: 110px;
+      width: 250px; }
+    body footer .logo ul {
+      display: flex;
+      flex-direction: column;
+      color: white;
+      list-style: none; }
+  body footer .media {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    body footer .media span {
+      color: white; }
+    body footer .media ul {
+      display: flex;
+      padding: 0;
+      list-style: none; }
+      body footer .media ul li {
+        cursor: pointer;
+        color: white;
+        font-size: 40px;
+        margin: 20px; }
+  body footer .rights {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 140px;
+    background-color: #363534;
+    color: white; }
+    body footer .rights a {
+      color: white;
+      text-decoration: none; }
+
+body.red .intro .btn_down {
+  border: 1px solid #f5ebeb; }
+  body.red .intro .btn_down i {
+    color: #f5ebeb; }
+body.red nav {
+  background-color: #551d26; }
+  body.red nav select option {
+    color: #551d26; }
+body.red .about {
+  background-color: #f5ebeb; }
+body.red .seasons {
+  background-color: #551d26; }
+body.red .quote .quote_content i {
+  color: #f5ebeb; }
+body.red .warriors {
+  background-color: #551d26; }
+  body.red .warriors .warrior_active {
+    color: #f5ebeb; }
+body.red .subscribe {
+  color: #551d26; }
+  body.red .subscribe .subscribe_input input {
+    border: 1px solid #551d26; }
+  body.red .subscribe .subscribe_input button {
+    color: #f5ebeb;
+    background-color: #551d26; }
+
+/*# sourceMappingURL=style.css.map */

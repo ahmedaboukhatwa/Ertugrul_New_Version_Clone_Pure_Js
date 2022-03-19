@@ -1,0 +1,465 @@
+//:root{
+$darkBlue: #012a3e;
+$darkRed: #551d26;
+$mainColor: $darkBlue;
+$lightBlue: rgb(235, 235, 255);
+$lightRed: rgb(245, 235, 235);
+$mainLight: $lightBlue;
+//}
+body {
+  .color_swicher{
+    z-index: 9999;
+    position: fixed;
+    right: 0;
+    top: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: self-end;
+    height: 101px;
+    width: 122px;
+    .blue_theme{
+      transition: all .5s ease-in-out;
+
+      height: 50px;
+      width: 70px;
+      background-color: $darkBlue;
+      cursor: pointer;
+    }
+    .red_theme{
+      transition: all .5s ease-in-out;
+
+      height: 50px;
+      width: 70px;
+      background-color: $darkRed;
+      cursor: pointer;
+    }
+    .active_theme{
+      width: 120px;
+      border: 1px solid  #c8bb82;
+    }
+  }
+  .intro {
+    background: url(../images/intro/wallpaper.jpg) center center fixed;
+    height: 665px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    transition: all 1s ease-in-out;
+    .content {
+      padding: 150px 140px;
+      color: white;
+      width: 60%;
+      font-size: 27px;
+      h1 {
+        font-weight: bold;
+      }
+      p {
+        color: #c8bb82;
+      }
+    }
+  
+    .btn_down {
+      height: 100px;
+      width: 60px;
+      cursor: pointer;
+      border-radius: 30px;
+      border: 1px solid $mainLight;
+      outline: none;
+      position: absolute;
+      left: 50%;
+      bottom: 20px;
+      transform: translateX(-10px);
+      background-color: transparent;
+      z-index: 9;
+      transition: all 0.5s ease-in-out;
+      &:hover {
+        height: 110px;
+      }
+      i {
+        color: $mainLight;
+        font-size: 28px;
+      }
+    }
+    canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      height: 100%;
+      width: 100%;
+    }
+  }
+  nav {
+    background-color: $mainColor;
+    position: sticky;
+    top: 0;
+    transition: all 0.5s ease-in-out;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 140px;
+    z-index: 999;
+    img {
+      width: 170px;
+    }
+    ul {
+      width: 480px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 19px;
+      margin: 0;
+      transform: translateX(142px);
+      li {
+        cursor: pointer;
+        list-style: none;
+        font-weight: bold;
+      }
+    }
+    select {
+      background-color: transparent;
+      color: white;
+      height: 32px;
+      width: 65px;
+      option {
+        color: $mainColor;
+      }
+    }
+  }
+  .about {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    transition: all 1s ease-in-out;
+    height: 500px;
+    background-color: $mainLight;
+    padding: 50px 140px;
+    .about_wallpaper {
+      align-content: space-between;
+      position: absolute;
+      display: flex;
+      flex-wrap: wrap;
+      left: 0;
+      top: 0;
+      height: 100%;
+      .up_img {
+        width: 100%;
+        height: 90px;
+      }
+      .down_img {
+        width: 100%;
+        height: 90px;
+        transform: rotate(180deg);
+      }
+    }
+    .about_img {
+      width: 600px;
+      height: 400px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .about_info {
+      text-align: center;
+      width: 570px;
+      font-size: 22.5px;
+    }
+  }
+  .seasons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transition: all 1s ease-in-out;
+    position: relative;
+    height: 500px;
+    background-color: $mainColor;
+    padding: 20px 140px;
+    overflow: hidden;
+    .seasons_wallpaper {
+      position: absolute;
+      height: 900px;
+      width: 900px;
+      left: -190px;
+      top: -245px;
+      transform: rotate(45deg);
+    }
+    .season {
+      width: 240px;
+      position: relative;
+      overflow: hidden;
+      transition: all 1s ease-in-out;
+      img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
+
+      .season_info {
+        background-color: rgba(0, 0, 0, 0.5);
+        transition: all 1s ease-in-out;
+        text-align: center;
+        color: white;
+        position: absolute;
+        height: 100%;
+        padding: 15px 5px;
+        top: 400px;
+        h2 {
+          font-weight: bold;
+        }
+        p {
+          height: 50px;
+          z-index: 555;
+        }
+      }
+      &:hover {
+        .season_info {
+          top: 0;
+        }
+      }
+    }
+  }
+  .quote {
+    transition: all 1s ease-in-out;
+    padding: 150px 140px;
+    text-align: center;
+
+    .quote_content {
+      display: flex;
+      align-items: center;
+      i {
+        color: $mainLight;
+        font-size: 150px;
+      }
+      p {
+        font-size: 25px;
+      }
+    }
+    span {
+      font-size: 25px;
+      font-weight: bold;
+    }
+  }
+  .warriors {
+    transition: all 1s ease-in-out;
+    background-color: $mainColor;
+    padding: 40px 140px;
+    .warrior_active {
+      color: $mainLight;
+      display: flex;
+      margin: 15px 0;
+      .warrior_img {
+        width: 885px;
+        height: 315px;
+        overflow: hidden;
+        border-radius: 25px;
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+      .warrior_info {
+        padding-left: 60px;
+        span {
+          font-weight: bold;
+          font-size: 30px;
+        }
+      }
+    }
+    .warriors_control {
+      display: flex;
+      .visible_warriors {
+        width: 1500px;
+        height: 250px;
+        overflow: hidden;
+        .ul_warriors_list {
+          list-style: none;
+          width: 1661px;
+          margin-left: -237px;
+          padding: 0;
+          display: flex;
+          justify-content: space-between;
+          .warrior {
+            height: 250px;
+            width: 300px;
+            overflow: hidden;
+            padding: 0 5px;
+            img {
+              height: 100%;
+              width: 100%;
+            }
+          }
+        }
+      }
+      button {
+        outline: none;
+        background-color: transparent;
+        border: 1px solid #c8bb82;
+        i {
+          color: #c8bb82;
+        }
+      }
+    }
+  }
+  .subscribe {
+    color: $mainColor;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 100px 140px;
+    .subscribe_text {
+      gap: 3px;
+      span {
+        color: #c8bb82;
+        font-size: 37px;
+      }
+      p {
+        font-size: 30px;
+      }
+    }
+
+    .subscribe_input {
+      display: flex;
+
+      height: 70px;
+      width: 700px;
+      input {
+        width: 90%;
+        height: 100%;
+        border: 1px solid $mainColor;
+        outline: none;
+      }
+      button {
+        color: $mainLight;
+        background-color: $mainColor;
+        border: none;
+        outline: none;
+        width: 10%;
+      }
+    }
+  }
+  footer {
+    background-color: #202020;
+    padding: 20px 140px 45px 140px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    .logo {
+      width: 40%;
+      display: flex;
+      justify-content: space-between;
+      img {
+        height: 110px;
+        width: 250px;
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        list-style: none;
+      }
+    }
+    .media {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      span {
+        color:white;
+      }
+      ul {
+        display: flex;
+        padding: 0;
+        list-style: none;
+        li {
+          cursor: pointer;
+          color: white;
+          font-size: 40px;
+          margin: 20px;
+        }
+      }
+    }
+    .rights {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      padding: 10px 140px;
+      background-color: #363534;
+      color: white;
+      a {
+        color: white;
+
+        text-decoration: none;
+      }
+    }
+  }
+}
+body.red {
+  $mainColor: $darkRed;
+  $mainLight: $lightRed;
+  .intro {
+    .btn_down {
+      border: 1px solid $mainLight;
+
+      i {
+        color: $mainLight;
+      }
+    }
+  }
+  nav {
+    background-color: $mainColor;
+
+    select {
+      option {
+        color: $mainColor;
+      }
+    }
+  }
+  .about {
+    background-color: $mainLight;
+  }
+  .seasons {
+    background-color: $mainColor;
+  }
+  .quote {
+    .quote_content {
+      i {
+        color: $mainLight;
+      }
+    }
+  }
+  .warriors {
+    background-color: $mainColor;
+
+    .warrior_active {
+      color: $mainLight;
+    }
+  }
+  .subscribe {
+    color: $mainColor;
+
+    .subscribe_input {
+      input {
+        border: 1px solid $mainColor;
+      }
+      button {
+        color: $mainLight;
+        background-color: $mainColor;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+}
+@media (max-width: 992px) {
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 557px) {
+}

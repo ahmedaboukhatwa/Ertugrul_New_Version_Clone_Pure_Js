@@ -1,0 +1,213 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Ertugrul New Version Clone Pure Js</title>
+  </head>
+  <body>
+    <div class="color_swicher">
+      <span class="blue_theme active_theme"></span>
+      <span class="red_theme"></span>
+    </div>
+    <div class="intro">
+      <div class="content">
+       <span> THE STORY ABOUT</span>
+        <h1> THE RESURRECTION OF A NATION</h1> 
+        <p>
+          Welcome to the Kayi tribe! 'Resurrection: Ertugrul' is a Turkish period drama that tells the story of the famous 13th-century warrior Ertugrul Bey, the father of Osman Gazi who would go on to establish the Ottoman Empire.
+        </p>
+      </div>
+      <button class="btn_down">
+        <i class="fa-solid fa-down-long"></i>
+      </button>
+      <canvas id="sand"></canvas>
+    </div>
+    <nav >
+      <img src="images/intro/logo-en.png" alt="" />
+      <ul>
+        <li class="li_about">About</li>
+        <li class="li_seasons">Seasons</li>
+        <li class="li_quote">Quote</li>
+        <li class="li_warriors">Warriors</li>
+        <li class="li_subscribe">Subscribe</li>
+      </ul>
+      <select>
+        <option value="en">En</option>
+        <option value="ar">Ar</option>
+      </select>
+    </nav>
+    <div class="about">
+      <div class="about_wallpaper">
+        <img class="up_img" src="images/about/download.png" alt="" srcset="" />
+        <img
+          class="down_img"
+          src="images/about/download.png"
+          alt=""
+          srcset=""
+        />
+      </div>
+      <div class="about_img">
+        <img src="images/about/wall.jpg" alt="" />
+      </div>
+      <div class="about_info">
+        <span
+          >THE STORY OF THE
+          <h2>KAYI TRIBE</h2></span
+        >
+        <p>
+          Set in Anatolia (modern-day Turkey), the nomadic Kayi tribe of the
+          Oghuz Turks are on a quest to find a place they can finally call home.
+          Ertugrul, the leader of the tribe, leads his people through
+          perseverance against hardship while striving for justice and
+          maintaining the traditions of the land. By battling his enemies with
+          strength and bravery, Ertugrul consequently plants the seed that would
+          lead to the founding of the Ottoman Empire, which spread across three
+          continents and ruled for six centuries.
+        </p>
+      </div>
+    </div>
+    <div class="seasons">
+      <img src="./images/seasons/wallpaper.webp" alt="" class="seasons_wallpaper">
+      <div class="season">
+        <img src="./images/seasons/season1.jpg" alt="" />
+        <div class="season_info">
+          <h2>Season 1</h2>
+          <p>
+            Ertugrul and his friends encounter the Knights Templar on a hunt.
+            After rescuing three Seljuk prisoners, they return to the Kayi
+            tribe. But the new arrivals cause problems for the tribe's leader
+            Suleyman Shah. He dispatches Ertugrul on a mission to find new land
+            and seek an agreement with the Sultan in Aleppo.
+          </p>
+        </div>
+      </div>
+      <div class="season">
+        <img src="./images/seasons/season2.jpg" alt="" />
+        <div class="season_info">
+          <h2>Season 2</h2>
+          <p>
+            Ertugrul is captured by the Mongols. After escaping, his return to
+            the tribe creates internal strife with his cousin Tugtekin.
+            Meanwhile, Ertugrul's long-lost brother appears. The Kayi tribe
+            splits as Ertugrul and a group journey to West Anatolia, leaving the
+            rest of the tribe.
+          </p>
+        </div>
+      </div>
+      <div class="season">
+        <img src="./images/seasons/season3.jpg" alt="" />
+        <div class="season_info">
+          <h2>Season 3</h2>
+          <p>
+            The Cavdar tribe, the most powerful in western Anatolia, deal with
+            Ertugrul's arrival. Deceit and manipulation manifest and a
+            leadership struggle ensues. To strengthen ties, Turgut Alp marries
+            Aslihan from the Cavdar. But danger lurks as Emir Sadettin Kopek
+            plots a trap for Ertugrul.
+          </p>
+        </div>
+      </div>
+      <div class="season">
+        <img src="./images/seasons/season4.jpg" alt="" />
+        <div class="season_info">
+          <h2>Season 4</h2>
+          <p>
+            As the Kayi tribe mourn Ertugrul's suspected death, Dundar becomes
+            the bey. But Ertugrul returns, banishes Dundar and declares war on
+            the Byzantines. The Sultan is poisoned by Kopek and dies in
+            Ertugrul's hands. In a final showdown, Ertugrul fights Kopek and
+            Osman's birth is a bittersweet occasion.
+          </p>
+        </div>
+      </div>
+
+      <div class="season">
+        <img src="./images/seasons/season5.jpg" alt="" />
+        <div class="season_info">
+          <h2>Season 5</h2>
+          <p>
+            Ten years after the Battle of Kosedag, the Mongols control the
+            Seljuk state. A spy is sent to gain information on Ertugrul's
+            rebellious plans but falls in love with him. Meanwhile, an assassin
+            works with the Mongols to wipe out the Oguz tribes.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="quote">
+      <div class="quote_content">
+        <i class="fa-solid fa-quote-left"></i>
+        <p>
+          To those who say our power is not enough, we will say our faith is enough. To those who say our lifespan is not enough, we will say our history is enough. To those who say that the universe is not enough, we say God is enough for us.
+         </p>
+        <i class="fa-solid fa-quote-right"></i>
+      </div>
+   
+     <span>Ertugrul Gazi</span>
+    </div> 
+    <div class="warriors">
+      <div class="warrior_active">
+       
+      </div>
+      <div class="warriors_control">
+        <button class="btn_previous">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+          <div class="visible_warriors">
+              <ul class="ul_warriors_list">
+              </ul>
+          </div>
+          <button class="btn_next">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+      </div>
+     
+    </div>
+    <div class="subscribe">
+      <div class="subscribe_text">
+        <span>SUBSCRIBE TO THE TRIBE!</span>
+        <p>
+          You’ll receive the latest updates from TRT.
+          <br>
+          THE EMAIL FIELD IS REQUIRED.
+        </p>
+      </div>
+     
+      <div class="subscribe_input">
+        <input type="text" placeholder="Your Email">
+        <button>
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+     
+    </div>
+    <footer>
+      <div class="logo">
+      <img src="images/intro/logo-en.png" alt="">
+      <ul>
+        <li class="li_about">About</li>
+        <li class="li_seasons">Seasons</li>
+        <li class="li_quote">Quote</li>
+        <li class="li_warriors">Warriors</li>
+        <li class="li_subscribe">Subscribe</li>
+      </ul>
+      </div>
+      <div class="media">
+        <span>FOLLOW Us</span>
+        <ul>
+          <li><i class="fa-brands fa-youtube"></i></li>
+          <li><i class="fa-brands fa-instagram"></i></li>
+          <li><i class="fa-brands fa-facebook-square"></i></li>
+          <li><i class="fa-brands fa-twitter"></i></li>
+        </ul>
+      </div>
+      <div class="rights">
+        <span><strong>coded by : </strong>  <a href="https://a-mohammed2001.github.io/My-Cv/" target="blank">Ahmed Abou Khatwa</a></span>
+      </div>
+    </footer>
+    <script src="js/all.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

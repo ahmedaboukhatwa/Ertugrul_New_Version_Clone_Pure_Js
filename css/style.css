@@ -1,3 +1,5 @@
+body * {
+  transition: all .5s ease-in-out; }
 body .color_swicher {
   z-index: 9999;
   position: fixed;
@@ -32,6 +34,8 @@ body .intro {
   position: relative;
   transition: all 1s ease-in-out; }
   body .intro .content {
+    transition: all .5 ease-in-out;
+    text-align: start;
     padding: 150px 140px;
     color: white;
     width: 60%;
@@ -94,7 +98,8 @@ body nav {
     background-color: transparent;
     color: white;
     height: 32px;
-    width: 65px; }
+    width: 65px;
+    cursor: pointer; }
     body nav select option {
       color: #012a3e; }
 body .about {
@@ -196,7 +201,7 @@ body .warriors {
     display: flex;
     margin: 15px 0; }
     body .warriors .warrior_active .warrior_img {
-      width: 885px;
+      width: 40%;
       height: 315px;
       overflow: hidden;
       border-radius: 25px; }
@@ -204,6 +209,7 @@ body .warriors {
         height: 100%;
         width: 100%; }
     body .warriors .warrior_active .warrior_info {
+      width: 60%;
       padding-left: 60px; }
       body .warriors .warrior_active .warrior_info span {
         font-weight: bold;
@@ -216,17 +222,15 @@ body .warriors {
       overflow: hidden; }
       body .warriors .warriors_control .visible_warriors .ul_warriors_list {
         list-style: none;
-        width: 1661px;
-        margin-left: -237px;
         padding: 0;
         display: flex;
         justify-content: space-between; }
         body .warriors .warriors_control .visible_warriors .ul_warriors_list .warrior {
           height: 250px;
-          width: 300px;
           overflow: hidden;
-          padding: 0 5px; }
+          padding: 0 9px 0 0; }
           body .warriors .warriors_control .visible_warriors .ul_warriors_list .warrior img {
+            cursor: pointer;
             height: 100%;
             width: 100%; }
     body .warriors .warriors_control button {
@@ -264,7 +268,8 @@ body .subscribe {
       border: none;
       outline: none;
       width: 10%; }
-body footer {
+
+      body footer {
   background-color: #202020;
   padding: 20px 140px 45px 140px;
   display: flex;
@@ -337,5 +342,69 @@ body.red .subscribe {
   body.red .subscribe .subscribe_input button {
     color: #f5ebeb;
     background-color: #551d26; }
+
+body.ar .color_swicher {
+  left: 0;
+  align-items: self-start; }
+body.ar .intro .content {
+  float: right;
+  text-align: end;
+  padding: 150px 140px; }
+  body.ar .intro .content h1 {
+    font-size: 50px;
+    margin-top: 20px; }
+body.ar nav {
+  flex-direction: row-reverse; }
+  body.ar nav img {
+    width: 150px; }
+  body.ar nav ul {
+    flex-direction: row-reverse;
+    transform: translateX(-142px); }
+body.ar .about {
+  flex-direction: row-reverse; }
+body.ar .seasons {
+  flex-direction: row-reverse; }
+  body.ar .seasons .seasons_wallpaper {
+    left: 770px;
+    top: -193px;
+    transform: rotate(60deg); }
+body.ar .warriors .warrior_active {
+  flex-direction: row-reverse; }
+  body.ar .warriors .warrior_active .warrior_info {
+    padding-right: 60px;
+    text-align: end; }
+body.ar footer {
+  padding: 20px 140px 45px 140px;
+  flex-direction: row-reverse; }
+  body.ar footer .logo {
+    width: 40%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between; }
+    body.ar footer .logo img {
+      height: 110px;
+      width: 250px; }
+    body.ar footer .logo ul {
+      display: flex;
+      flex-direction: column;
+      color: white;
+      list-style: none; }
+  body.ar footer .media {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    body.ar footer .media span {
+      color: white; }
+    body.ar footer .media ul {
+      display: flex;
+      padding: 0;
+      list-style: none; }
+      body.ar footer .media ul li {
+        color: white;
+        font-size: 40px;
+        margin: 20px; }
+  body.ar footer .rights span {
+    float: right; }
 
 /*# sourceMappingURL=style.css.map */

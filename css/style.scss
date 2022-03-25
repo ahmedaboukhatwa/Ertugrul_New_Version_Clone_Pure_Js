@@ -1,12 +1,13 @@
-//:root{
 $darkBlue: #012a3e;
 $darkRed: #551d26;
 $mainColor: $darkBlue;
 $lightBlue: rgb(235, 235, 255);
 $lightRed: rgb(245, 235, 235);
 $mainLight: $lightBlue;
-//}
 body {
+  *{
+    transition: all .5s ease-in-out;
+  }
   .color_swicher{
     z-index: 9999;
     position: fixed;
@@ -47,6 +48,8 @@ body {
     position: relative;
     transition: all 1s ease-in-out;
     .content {
+      transition: all .5 ease-in-out;
+      text-align: start;
       padding: 150px 140px;
       color: white;
       width: 60%;
@@ -122,6 +125,7 @@ body {
       color: white;
       height: 32px;
       width: 65px;
+      cursor: pointer;
       option {
         color: $mainColor;
       }
@@ -250,7 +254,7 @@ body {
       display: flex;
       margin: 15px 0;
       .warrior_img {
-        width: 885px;
+        width:40%;
         height: 315px;
         overflow: hidden;
         border-radius: 25px;
@@ -260,6 +264,7 @@ body {
         }
       }
       .warrior_info {
+        width: 60%;
         padding-left: 60px;
         span {
           font-weight: bold;
@@ -275,17 +280,18 @@ body {
         overflow: hidden;
         .ul_warriors_list {
           list-style: none;
-          width: 1661px;
-          margin-left: -237px;
+        //  width: 2100px;
+        //  margin-left: -300px;
           padding: 0;
           display: flex;
           justify-content: space-between;
           .warrior {
             height: 250px;
-            width: 300px;
+         //   width: 300px;
             overflow: hidden;
-            padding: 0 5px;
+            padding: 0 9px 0 0;
             img {
+              cursor: pointer;
               height: 100%;
               width: 100%;
             }
@@ -450,6 +456,126 @@ body.red {
       button {
         color: $mainLight;
         background-color: $mainColor;
+      }
+    }
+  }
+}
+body.ar {
+  .color_swicher {
+    left: 0;
+    align-items: self-start;
+  }
+  .intro {
+    .content {
+      float: right;
+      text-align: end;
+      padding: 150px 140px;
+      h1{
+        font-size: 50px;
+        margin-top: 20px;
+
+      }
+    }
+  }
+  nav {
+    flex-direction: row-reverse;
+    img {
+      width: 150px;
+    }
+    ul {
+      flex-direction: row-reverse;
+      transform: translateX(-142px);
+    }
+  }
+  .about {
+   flex-direction: row-reverse;
+  }
+  .seasons {
+   flex-direction: row-reverse;  
+    .seasons_wallpaper {
+      left: 770px;
+      top: -193px;
+      transform: rotate(60deg);
+    }
+   
+  }
+  .warriors {
+    .warrior_active {
+      flex-direction: row-reverse;
+      .warrior_info {
+        padding-right: 60px;
+        text-align: end;
+      }
+    }
+    // .warriors_control {
+    //   flex-direction: row-reverse;
+    //   .visible_warriors {
+    //     width: 1500px;
+    //     height: 250px;
+    //     overflow: hidden;
+    //     .ul_warriors_list {
+    //       list-style: none;
+    //       width: 1661px;
+    //       margin-left: -237px;
+    //       padding: 0;
+    //       display: flex;
+    //       justify-content: space-between;
+    //       .warrior {
+    //         height: 250px;
+    //         width: 300px;
+    //         overflow: hidden;
+    //         padding: 0 5px;
+    //         img {
+    //           height: 100%;
+    //           width: 100%;
+    //         }
+    //       }
+    //     }
+    //   }
+    // }
+  }
+  footer {
+    padding: 20px 140px 45px 140px;
+    flex-direction: row-reverse;
+    .logo {
+      width: 40%;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      img {
+        height: 110px;
+        width: 250px;
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        list-style: none;
+      }
+    }
+    .media {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      span {
+        color: white;
+      }
+      ul {
+        display: flex;
+        padding: 0;
+        list-style: none;
+        li {
+          color: white;
+          font-size: 40px;
+          margin: 20px;
+        }
+      }
+    }
+    .rights {
+      
+      span{
+        float: right;
       }
     }
   }
